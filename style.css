@@ -1,0 +1,40 @@
+*, *::before, *::after { box-sizing: border-box;}
+
+#timer {
+    color: purple;
+    font-size: larger;
+}
+
+#question {
+    color: purple;
+    font-size: xx-large;
+}
+
+#startBtn {
+    background-color: purple;
+    border-color: purple;
+}
+
+#quizBox {
+    justify-content: center;
+    background-color: rgb(240, 220, 240);
+    }
+
+#timerBox {
+    margin-left: auto;
+}
+
+#startBtn:hover { 
+    background-color: rgb(141, 73, 141); 
+    font-size: xx-large;}
+
+.buttons {
+    margin: 5px;
+    background-color: rgb(202, 187, 201);
+    border-color: purple;
+    color: purple;
+}
+
+.hide {
+    display: none;
+}
