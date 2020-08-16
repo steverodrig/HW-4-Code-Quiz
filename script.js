@@ -73,18 +73,26 @@ function startQuiz() {
     for (var i = 0; i < questionBank.length; i++) {
         $("#question").text(questionBank[i].question);
     };
+    
 };
 
 // select answer function
 function answerChoice() {
-    $(".buttons").on("click", function() {});
+    for (var i = 0; i < questionBank.length; i++) {
+       $(".buttons").text(questionBank[i].answers);
+    }
+    $(".buttons").on("click", function() {
+        console.log("answer clicked");
+    
     if ($(this).text()=== questionBank[currQstIdx].correctAnswer) { 
-    currentQstIdx++ 
+            currentQstIdx++ 
     };
+    });
+    
 };
 
+// Timer code
 function startTimer() {
-    // Write code to start the timer here
     totalSeconds = 300
     setInterval(function() {
       totalSeconds--
