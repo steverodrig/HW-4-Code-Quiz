@@ -18,8 +18,8 @@
 #quizBox {
     justify-content: center;
     background-color: rgb(240, 220, 240);
-    }
-
+    margin-top: 150px;
+}
 #timerBox {
     margin-left: auto;
 }

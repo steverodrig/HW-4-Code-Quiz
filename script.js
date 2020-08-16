@@ -7,7 +7,6 @@ var secDisplay = document.getElementById("seconds");
 var correct = 0;
 var currQstIdx = 0;
 var totalSeconds = 0;
-var secondsElapsed = 0;
 var interval;
 //Question Bank
 var questionBank = [
@@ -70,9 +69,9 @@ function startQuiz() {
     answerChoice ();
 };  
 // render question function
-function presentQuestion() {
+    function presentQuestion() {
     for (var i = 0; i < questionBank.length; i++) {
-        $("#question").text(questionBank.question);
+        $("#question").text(questionBank[i].question);
     };
 };
 
@@ -82,11 +81,6 @@ function answerChoice() {
     if ($(this).text()=== questionBank[currQstIdx].correctAnswer) { 
     currentQstIdx++ 
     };
-};
-
-function clear(){
-    clearInterval(interval);
-    totalSeconds = 4;
 };
 
 function startTimer() {
